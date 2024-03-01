@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>NU Laguna</title>
+
+    <script src="https://kit.fontawesome.com/221dbf6aeb.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+
+    <!-- Navigation -->
+    <nav>
+      <img class="logo" src="img/Logo.png" alt="logo">
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times" style="color: #ffffff;"></i>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Admission</a></li>
+          <li><a href="#">Scholarship</a></li>
+          <li><a href="#">Alumni</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <img id="menu-btn" src= "img/menu.png" alt="">
+      </div>
+    </nav>
+
+      <!-- Home -->
+      <section id="home">
+        <h2> Education That Works</h2>
+        <p> In this campus tour, get a glimpse of what it’s like to be a student in our beautiful home in the South!
+            From the campus facilities to the world-class equipment of Inspire Sports Academy, you’ll be amazed with what NU Laguna has to offer!
+            Through this video, we hope that you’ll be able to visualize your future as a Nation builder through #EducationThatWorks
+          </p>
+
+          <div class="btn">
+            <a class="blue" href="#">Learn More</a>
+            <a class="yellow" href="#">Visit Courses</a>
+          </div>
+      </section>
+
+      <!-- features -->
+      <section id="features">
+        <h1>Awesome Features</h1>
+        <p> National University wants students from all over the country to be a part of our community.</p>
+        <div class="fea-base">
+          <div class="fea-box">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h3>Scholarship facility</h3>
+            <p>The NU Laguna Scholarship Facility offers scholarships and academic support to students at National University's Laguna
+              campus, empowering them to excel in their studies and achieve their educational goals.</p>
+          </div>
+
+          <div class="fea-box">
+            <i class="fa-solid fa-school"></i>
+            <h3>We're a Microsoft Showcase School</h3>
+            <p>Microsoft Showcase schools are a global community of learning institutions that drive the culture of digital
+              transformation to improve learning and innovation in education.</p>
+          </div>
+
+          <div class="fea-box">
+            <i class="fa-solid fa-award"></i>
+            <h3>Global Certification</h3>
+            <p>NU Laguna's Global Certification ensures that its programs meet international standards,
+              enhancing students' career opportunities worldwide.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Courses -->
+      <section id="course">
+        <h1>Courses Offered</h1>
+        <div class="course-box">
+          <div class="courses">
+            <img src="img/ccs.jpg" alt="">
+            <div class="details">
+              <h6> COMPUTING & INFORMATION TECHNOLOGIES </h6>
+              <p> ∙ BS Information <br> ∙ BS Computer Science <br> ∙ BS Information System <p>
+            </div>
+          </div>
+
+          <div class="courses">
+            <img src="img/edu.jpg" alt="">
+            <div class="details">
+              <h6> EDUCATION, ARTS AND SCIENCES </h6>
+              <p> ∙ BS Psychology <br> ∙ BS Multimedia Arts <br> ∙ BS Exercise and Sports Science <p>
+            </div>
+          </div>
+
+          <div class="courses">
+            <img src="img/eng.png" alt="">
+            <div class="details">
+              <h6>ENGINEERING AND ARCHITECTURE</h6>
+              <p> ∙ BS Architecture <br> ∙ BS Computer Engineer <br> ∙ BS Civil Engineer <p>
+            </div>
+          </div>
+
+          <div class="courses">
+            <img src="img/acc.png" alt="">
+            <div class="details">
+              <h6>BUSINESS AND ACCOUNTANCY </h6>
+              <p> ∙ BS Accountancy <br> ∙ BS Business Administration Major in Marketing and Advertising <br> ∙ BS Tourism Management <p>
+            </div>
+          </div>
+
+          <div class="courses">
+            <img src="img/shs.jpg" alt="">
+            <div class="details">
+              <h6> SENIOR HIGH SCHOOL </h6>
+              <p> ∙ Sciences, Technology, Engineering and Mathematics
+              <BR> ∙ Accountancy, Business and Management
+              <BR> ∙ Humanities and Social Sciences <p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- footer -->
+      <footer>
+        <div class="footer-content">
+          <h3>National University - Laguna</h3>
+          <ul class="socials">
+            <li><a href="https://www.facebook.com/search/top?q=nu%20laguna"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/NationalUPhil"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/NationalUPH/"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCNvTW78sivAR80TIr-VTvrg"><i class="fa fa-youtube"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <p>Solo Project &copy; 2021 Web Programming 1. designed by <span> Neil Lorraine Bundoc.</span></p>
+        </div>
+      </footer>
+
+      <script>
+        $('#menu-btn').click(function() {
+          $('nav .navigation ul').addClass('active')
+        });
+
+        $('#menu-close').click(function() {
+          $('nav .navigation ul').removeClass('active')
+        });
+      </script>
+  </body>
+</html>
