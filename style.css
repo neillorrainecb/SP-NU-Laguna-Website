@@ -82,6 +82,7 @@ nav .navigation ul li a{
   transition: 0.3s ease;
 }
 
+nav .navigation ul li a.active,
 nav .navigation ul li a:hover{
   color: #FDB813;
 }
@@ -154,7 +155,7 @@ nav .navigation ul li a:hover{
 /* features */
 
 #features{
-  padding: 5vw 8vw 0 8vw;
+  padding: 3vw 8vw 3vw 8vw;
   text-align: center;
 }
 
@@ -192,7 +193,7 @@ nav .navigation ul li a:hover{
 /* Courses */
 
 #course{
-  padding: 8VW 8vw 8vw 8vw;
+  padding: 5vw 8vw 3vw 8vw;
   text-align: center;
 }
 
@@ -288,11 +289,107 @@ footer{
   font-weight: 200px;
 }
 
+/* about-home */
+
+#about-home{
+  background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url("img/about.jpg");
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 40px;
+  margin-top: 0%;
+}
+
+#about-home h2{
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+#about-container{
+  display: flex;
+  align-items: center;
+  padding-top: 2vw;
+  padding-left: 8vw;
+  padding-right: 8vw;
+  padding-bottom: 0vw;
+}
+
+#about-container .about-imgs{
+  width: 60%;
+  padding: 60px;
+}
+
+#about-container .about-imgs img{
+  width: 100%;
+}
+
+#about-container .about-text{
+  width: 40%;
+}
+
+#about-container .about-text h2{
+  color: #29303B;
+  padding-bottom: 15px;
+}
+
+#about-container .about-text p{
+  color: #686F7A;
+  font-weight: 300;
+}
+
+#about-container .about-text .about-fe{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+#about-container .about-text .about-fe img{
+  width: 50px;
+  background-size: cover;
+  background-position: center;
+  margin-right: 20px;
+}
+
+#about-container .about-text .about-fe .fe-text{
+  width: 90%;
+}
+
+#about-container .about-text .about-fe .fe-text h5{
+  font-size: 16px;
+  color: #29303B;
+}
+
+#org{
+  text-align: center;
+  padding: 2vw 8vw 5vw 8vw;
+}
+
+#org .org-img{
+  padding: 0% 5vw;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#org .org-img img{
+   width: 90px;
+   height: auto;
+}
 
 /* ipad */
 @media(max-width: 820px){
   nav{
-    padding:15px 30px;
+    padding:15px 25px;
   }
   nav img{
     width: 130px;
@@ -358,8 +455,52 @@ footer{
   #course .courses .details{
     padding: 15px 15px 50px 30px;
   }
+
+  /* About */
+
+  #about-container{
+    padding: 8vw 4vw 2vw 4vw;
+  }
+
+  #about-container .about-imgs{
+    padding: 30px;
+  }
+  #org .org-img img{
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+ }
 }
 
 @media(max-width: 475px){
 
+  /* About */
+   #about-container{
+    flex-direction: column;
+  }
+
+  #about-container .about-imgs{
+    width: 100%;
+    padding: 0px;
+  }
+
+  #about-container .about-text{
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  
+  #org .org-imggi{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    flex-wrap: wrap;
+  }
+
+  #org .org-img img{
+    width: 60px;
+    margin: 10px 15px;
+    height: auto;
+  }
 }
