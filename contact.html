@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>NU Laguna</title>
+
+    <script src="https://kit.fontawesome.com/221dbf6aeb.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+
+    <!-- Navigation -->
+    <nav>
+      <img class="logo" src="img/Logo.png" alt="logo">
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times" style="color: #ffffff;"></i>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="admission.html">Admissions</a></li>
+          <li><a href="scholarship.html">Scholarship</a></li>
+          <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+        <img id="menu-btn" src= "img/menu.png" alt="">
+      </div>
+    </nav>
+
+      <!-- Home -->
+      <section id="about-home">
+        <h2> Contact Us </h2>
+      </section>
+
+      <section id="contact">
+        <div class="getin">
+            <h2>Get in touch</h2>
+            <p>Want to join National University? Fill the form and we'll get back to you right away</p>
+            <div class="getin-details">
+                <h3>Location</h3>
+                <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Km. 53, Pan Philippine Highway, Brgy, Milagrosa, Calamba City, Laguna 4027</p>
+                </div>
+                <h3>Phone</h3>
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <p>0919-082-1494<br>0977-3466136<br>049-572-3356</p>
+                </div>
+                <h3>Email Addresses</h3>
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>admissions@nu-laguna.edu.ph</p>
+                </div>
+                <h3>Follow Us</h3>
+                <div class="links">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Form -->
+        <div class="form">
+            <h4>Let's Connect!</h4>
+            <p>Create more campus life memories with #EducationThatWorks!</p>
+            <div class="form-row">
+                <input type="text" placeholder="Your Name">
+                <input type="text" placeholder="Your Email">
+            </div>
+            <div class="form-col">
+                <input type="text" placeholder="Subject">
+            </div>
+            <div class="form-col">
+                <textarea name="" id="" cols="30" rows="8" placeholder="How can we help?"></textarea>
+            </div>
+            <div class="form-col">
+                <button>Send Message</button>
+            </div>
+        </div>
+      </section>
+
+      <!-- Map -->
+      <section id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3868.275320215164!2d121.13364027509807!3d14.17864598625918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd63862f343bdd%3A0x27b21f8ee9b7395d!2sNational%20University%20Laguna!5e0!3m2!1sen!2sph!4v1709615958050!5m2!1sen!2sph" 
+         style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+
+      <!-- footer -->
+      <footer>
+        <div class="footer-content">
+          <h3>National University - Laguna</h3>
+          <ul class="socials">
+            <li><a href="https://www.facebook.com/search/top?q=nu%20laguna"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/NationalUPhil"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/NationalUPH/"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCNvTW78sivAR80TIr-VTvrg"><i class="fa fa-youtube"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <p>Solo Project &copy; 2021 Web Programming 1. designed by <span> Neil Lorraine Bundoc.</span></p>
+        </div>
+      </footer>
+
+      <script>
+        $('#menu-btn').click(function() {
+          $('nav .navigation ul').addClass('active')
+        });
+
+        $('#menu-close').click(function() {
+          $('nav .navigation ul').removeClass('active')
+        });
+      </script>
+  </body>
+</html>
